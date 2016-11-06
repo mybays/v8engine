@@ -24,3 +24,6 @@ target_link_libraries (shell LINK_PUBLIC v8_base.x64 v8_snapshot)
 
 add_executable(version version.cpp)
 target_link_libraries (version LINK_PUBLIC v8_base.x64 v8_snapshot)
+
+add_executable(lineprocessor lineprocessor.cc)
+target_link_libraries (lineprocessor LINK_PUBLIC v8_base.x64 v8_snapshot)
